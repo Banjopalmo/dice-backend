@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avocates",
+  "info": {
+    "singularName": "avocate",
+    "pluralName": "avocates",
+    "displayName": "Avocate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Prenom": {
+      "type": "string"
+    },
+    "Nom": {
+      "type": "string"
+    },
+    "FR": {
+      "type": "boolean",
+      "default": true
+    },
+    "EN": {
+      "type": "boolean"
+    },
+    "NL": {
+      "type": "boolean"
+    },
+    "matieres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::matiere.matiere"
+    },
+    "NumeroTel": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "TVA": {
+      "type": "string"
+    },
+    "Presentation": {
+      "type": "customField",
+      "customField": "plugin::tinymce.tinymce"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matieres",
+  "info": {
+    "singularName": "matiere",
+    "pluralName": "matieres",
+    "displayName": "Matière"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "TitreNL": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "FR/NL",
+        "Sujets multiples",
+        "Sujet unique"
+      ]
+    },
+    "Contenu": {
+      "type": "dynamiczone",
+      "components": [
+        "shared.sous-matiere"
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_sous_matieres",
+  "info": {
+    "displayName": "Sous-matière"
+  },
+  "options": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Contenu": {
+      "type": "customField",
+      "customField": "plugin::tinymce.tinymce"
+    }
+  },
+  "config": {}
+}

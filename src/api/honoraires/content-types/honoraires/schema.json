@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "honorairess",
+  "info": {
+    "singularName": "honoraires",
+    "pluralName": "honorairess",
+    "displayName": "Honoraires"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "customField",
+      "customField": "plugin::tinymce.tinymce"
+    }
+  }
+}

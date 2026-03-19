@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "servicess",
+  "info": {
+    "singularName": "services",
+    "pluralName": "servicess",
+    "displayName": "Services"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "customField",
+      "customField": "plugin::tinymce.tinymce"
+    },
+    "Photo": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
